@@ -1,9 +1,9 @@
 module.exports = {
-  entry: './src/js/index.js',
+  entry: "./src/js/index.js",
   output: {
     path: `${__dirname}/dist/js`,
-    filename: 'bundle.js',
-    publicPath: '/js'
+    filename: "bundle.js",
+    publicPath: "/js"
   },
 
   module: {
@@ -12,19 +12,22 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
           options: {
-            presets: ['env', 'react'],
-            plugins: ["transform-object-rest-spread", ]
+            presets: ["env", "react"],
+            plugins: [
+              "transform-object-rest-spread",
+              "transform-class-properties"
+            ]
           }
         }
       },
       {
-        test:/\.css$/,
+        test: /\.css$/,
         use: [
-          'style-loader', 
+          "style-loader",
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               url: false
             }
@@ -32,16 +35,16 @@ module.exports = {
         ]
       },
       {
-        test:/\.scss$/,
-        use: [ 
-          'style-loader',
+        test: /\.scss$/,
+        use: [
+          "style-loader",
           {
-            loader: 'css-loader',
+            loader: "css-loader",
             options: {
               url: false
             }
           },
-          'sass-loader'
+          "sass-loader"
         ]
       }
     ]
@@ -52,6 +55,5 @@ module.exports = {
     historyApiFallback: true
   },
 
-  devtool: 'source-map',
-
+  devtool: "source-map"
 };
