@@ -8,15 +8,11 @@
     justify-content: space-around;
     flex-direction: column;
     flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
     align-content: space-between;
   }
-
   .Sofa .banner {
     margin-top: 20px;
     display: flex;
-    // background: linear-gradient(45deg,#ADA996, #F2F2F2,#DBDBDB,#EAEAEA) no-repeat fixed;
     background: url("../img/Sofa/banner.jpg") no-repeat fixed;
     background-size: cover;
     padding: 400px 0 40px 0;
@@ -31,41 +27,84 @@
   .intro-container .Image{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
-    justify-content: space-between;
+    margin-left: 120px;
   }
   .intro-container  .sofaimg{
-    width: 600px;
+    width: 800px;
+    height:492px;
     border-radius: 4px 4px 4px 4px;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
     margin-bottom: 20px;
   }
+  
   .intro-container .description{
-    width: 500px;
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
     margin-bottom: 20px;
     margin-left: 120px;
     line-height: 30px;
-    background-color: lightgray;
     
-  }
-  .intro-container .description h2{
-    color:#F2994A;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
   }
   .intro-container .description .Question{
-    text-align: initial;
-   
-    
+    text-align: initial; 
   }
+  .description h2{
+    color:#363636 ;
+  }
+  .description p{
+    color: #363636;
+    width: 65%;
+  }
+  .Image p{
+    line-height: 30px;
+    width: 65%;
+    color: #363636;
+  }
+@media (max-width:769px){
+  .intro-container .sofaimg{
+    width: 769%;
+    height:769%;
+ }
+}
+@media (max-width:769px){
+  .intro-container .Image p{
+    margin-left: -80px;
+    width: 165%;
+ }
+}
+@media (max-width:769px){
   .intro-container .description p{
-    display: flex;
-    margin-left: 20px;
-   color:rgb(150, 131, 131) ; 
-  }
+    margin-left: -80px;
+    width: 110%;
+ }
+}
+@media (max-width:769px){
+  .intro-container .description h2{
+    margin-left: -80px;
+ }
+}
+@media (max-width:375px){
+  .intro-container .sofaimg{
+    margin-left: -80px;
+    width: 650px;
+    height:250px;
+ }
+}
+@media (max-width:375px){
+  .intro-container .Image p{
+    margin-left: -80px;
+    width: 165%;
+ }
+}
+@media (max-width:375px){
+  .intro-container .description p{
+    margin-left: -80px;
+    width: 125%;
+ }
+}
+@media (max-width:375px){
+  .intro-container .description h2{
+    margin-left: -80px;
+ }
+}
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -90,7 +129,7 @@
   margin-top: 50px;
   width: 40px;
   height: 3px;
-  background: #18d26e;
+  background: #be5869;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -137,7 +176,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
-  border-left: 4px solid #18d26e;
+  border-left: 4px solid #be5869;
 }
 
 .footer .footer-top .footer-info p {
@@ -166,7 +205,7 @@
 }
 
 .footer .footer-top .social-links a:hover {
-  background: #18d26e;
+  background: #be5869;
   color: #fff;
 }
 
@@ -194,7 +233,7 @@
 }
 
 .footer .footer-top h4::after {
-  background: #18d26e;
+  background: #be5869;
   width: 60px;
 }
 
@@ -228,7 +267,7 @@
 }
 
 .footer .footer-top .footer-links ul a:hover {
-  color: #18d26e;
+  color: #be5869;
 }
 
 .footer .footer-top .fa-home{
@@ -270,29 +309,23 @@ margin-right: 10px;
 }
 
 .footer .footer-top .footer-newsletter ul a:hover {
-  color: #18d26e;
+  color: #be5869;
 }
 
 
-.footer .copyright {
-  text-align: center;
-  padding-top: 30px;
+.Footer-info{
+  display: flex;
+  justify-content: center;
 }
-
-.footer .credits a{
-  text-align: center;
-  font-size: 20px;
-  color:black;
+.Footer-info .credits{
+  margin-top: 25px;
+  margin-left: 30px;
 }
   /* mobile style
 --------------------------------*/
 
 
 @media (min-width: 768px) {
-  //  .Sofa {
-  //     padding: 20px 0;
-  //   }
-  
     .sofa  {
       border-left: 1px solid #ddd;
       border-right: 1px solid #ddd;
