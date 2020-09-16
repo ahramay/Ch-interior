@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom';
 
 class Home extends Component {
   render() { 
     return ( 
-      <BrowserRouter>
        <div className="home">
         <section className="about" class="wow fadeInUp">
          <div class="containe">
@@ -29,7 +28,7 @@ class Home extends Component {
             <div className="img">
              <img className="img-fluid" src="../img/Sofa/sofa.jpg" alt="" />
             </div>
-             <h2 className="title"><a href="Sofa House">Sofa House</a></h2>
+             <h2 className="title"><a>Sofa House</a></h2>
               <p>
               We make wide range of furniture too on our customers demand with material choice as well.
               We make furniture with fine and strong wood with long time durability.
@@ -42,7 +41,7 @@ class Home extends Component {
               <div className="img">
                 <img className="img-fluid" src="../img/Sofa/hard-cloth.jpg" alt="" />
               </div>
-              <h2 className="title"><a href="Hard Cloth & Mattress">Hard Cloth & Mattress</a></h2>
+               <h2 className="title"><a>Hard Cloth & Mattress</a></h2>
               <p>
               Here in this section we have hard cloth fabric is available in varieties of designs. which will show a luxurious and elegant look with the object on which are used.
               </p>
@@ -54,7 +53,7 @@ class Home extends Component {
               <div className="img">
               <img className="img-fluid" src="../img/leather/leather.jpg" alt="" />
               </div>
-              <h2 className="title"><a href="Leather Fabric">Leather Fabric</a></h2>
+              <h2 className="title"><a>Leather Fabric</a></h2>
               <p>
               We have a wide range of beautiful engraved and printed designs rexine sheets. Made up of plastic and leather fabric which gives an elegant, soft,car's and shiny touch to the look of interior on which it is used.
               </p>
@@ -65,7 +64,7 @@ class Home extends Component {
               <div className="img">
               <img className="img-fluid" src="../img/fiberglass/fiber-glass.jpg" alt="" />
               </div>
-              <h2 className="title"><a href="Fiber Glass Sheets">Fiber Glass Sheets</a></h2>
+              <h2 className="title"><a>Fiber Glass Sheets</a></h2>
               <p>
               We have a wide range of unique Fiberglass plastic sheets  which is type of mineral wood made up of nylon and silicate pieces.
               </p>
@@ -76,7 +75,7 @@ class Home extends Component {
               <div className="img">
               <img className="img-fluid" src="../img/Tarpal/Tarpal.jpeg " alt="" />
               </div>
-              <h2 className="title"><a href="Tarpal House">Tarpal House</a></h2>
+              <h2 className="title"><a>Tarpal House</a></h2>
               <p>
               A strong cloth made of hemp, flax, or cotton; -- used for tents, sails, etc. (n.) A coarse cloth so woven as to form regular meshes for working with the needle, as in tapestry, or worsted work.
               </p>
@@ -264,7 +263,7 @@ class Home extends Component {
                       <li className="menu-active"><a href="/">Home</a></li>
                       <li class="menu-has-children"><a href="/">Services</a></li>
                       <li><a href="#portfolio">Portfolio</a></li>
-                      <li><a href="contact">Contact</a></li>
+                     <NavLink to="contact"  activeClassName="is-active"> <li><a>Contact</a></li></NavLink>
                       </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 footer-contact">
@@ -280,11 +279,11 @@ class Home extends Component {
                     <div class="col-lg-3 col-md-6 footer-newsletter">
                       <h4>Services</h4>
                       <ul>
-                        <li><a href="Sofa House">Sofa House</a></li>
-                        <li><a href="Hard Cloth & Mattress">Hard Cloth & Mattress</a></li>
-                        <li><a href="Leather Fabric">Leather Fabric</a></li>
-                        <li><a href="Fiber Glass Sheets">Fiber Glass Sheets</a></li>
-                        <li><a href="Tarpal House">Tarpal House</a></li>
+                        <li><a>Sofa House</a></li>
+                        <li><a>Hard Cloth & Mattress</a></li>
+                        <li><a>Leather Fabric</a></li>
+                        <li><a>Fiber Glass Sheets</a></li>
+                        <li><a>Tarpal House</a></li>
                       </ul>
                     </div>
                   </div>
@@ -297,13 +296,13 @@ class Home extends Component {
                 <div class="credits">
                   Designed by <a href="">Smart IT Tech</a>
                 </div>
+                <div class="pull-right-1">
+                <a href="#" classname="back-to-top"><i className="fa fa-chevron-up"></i></a>
+               </div>
               </div>
             </footer>
-        <Switch>
-          <a href="/" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-       </Switch>
-      </div>
-     </BrowserRouter>  
+           
+      </div> 
     );
   }
 }

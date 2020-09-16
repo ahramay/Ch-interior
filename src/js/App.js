@@ -4,12 +4,13 @@ import SideDrawer from "./component/Sidedrawer/sideDrawer";
 import Backdrop from "./component/Backdrop/backdrop";
 import Home from "./Home/home";
 import Contact from "./Contact/contact";
-import HardCloth from "./Services/Hardcloth";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import HardCloth from "./Services/hardcloth";
+import { BrowserRouter, Route, Switch,Link,NavLink } from "react-router-dom";
 import LeatherFabric from "./Services/leatherfabric";
-import SofaHouse from "./Services/SofaHouse";
-import TarpalHouse from "./Services/TarpalHouse";
-import FiberGlass from "./Services/FiberGlass";
+import SofaHouse from "./Services/sofaHouse";
+import TarpalHouse from "./Services/tarpalHouse";
+import FiberGlass from "./Services/fiberglass";
+
 class App extends Component {
   state = {
    sideDrawerOpen: false
@@ -35,13 +36,12 @@ class App extends Component {
           {backdrop}
           <Switch>
             <Route exact path="/" exact component={Home} />
-            {/* <Route path="/services" component={Services} />     */}
-            <Route path="/Hard Cloth & Mattress" component={HardCloth} />
-            <Route path="/Leather Fabric" component={LeatherFabric} />
-            <Route path="/Sofa House" component={SofaHouse} />
-            <Route path="/Tarpal House" component={TarpalHouse} />
-            <Route path="/Fiber Glass Sheets" component={FiberGlass} />
-            <Route path="/Contact" component={Contact} />
+            <Route path="/hardclothmattress" component={HardCloth} />
+            <Route path="/leatherfabric" component={LeatherFabric} />
+            <Route path="/sofahouse" component={SofaHouse} />
+            <Route path="/tarpalhouse" component={TarpalHouse} />
+            <Route path="/fiberglasssheets" component={FiberGlass} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
       </BrowserRouter>

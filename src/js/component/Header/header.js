@@ -1,6 +1,6 @@
 import React, { Component }from 'react';
 import DrawerToggleButton from '../SideDrawer/drawerToggleButton';
-
+import { NavLink } from "react-router-dom";
 const Header = props => (
       <header className="header">
        <div className="container">
@@ -14,18 +14,20 @@ const Header = props => (
         <div className="spacer" />
         <nav className="nav-menu-container">
           <ul className="nav-menu">
-            <li className="menu-active"><a href="/">Home</a></li>
-            <li class="new"><a href="#services">Services</a>
-            <ul>
-              <li><a href="Sofa House">Sofa House</a></li>
-              <li><a href="Hard Cloth & Mattress">Hard Cloth & Mattress</a></li>
-              <li><a href="Leather Fabric">Leather Fabric</a></li>
-              <li><a href="Fiber Glass Sheets">Fiber Glass Sheets</a></li>
-              <li><a href="Tarpal House">Tarpal House</a></li>
+          <NavLink className="menu-active" to="/" activeClassName="is-active"><li><a>Home</a></li></NavLink>
+            <NavLink  to="#services" activeClassName="is-active">
+              <li className="new"><a>Services</a>
+            <ul className="nav-link">
+              <NavLink  to="sofahouse" activeClassName="is-active"><li><a>sofahouse</a></li></NavLink>
+              <NavLink  to="hardclothmattress" activeClassName="is-active"><li><a>hardclothmattress</a></li></NavLink>
+              <NavLink  to="leatherfabric" activeClassName="is-active"><li><a>leatherfabric</a></li></NavLink>
+              <NavLink  to="fiberglasssheets" activeClassName="is-active"><li><a>fiberglasssheets</a></li></NavLink>
+              <NavLink  to="tarpalhouse" activeClassName="is-active"><li><a>tarpalhouse</a></li></NavLink>
             </ul>
-            </li>
-            <li><a href="/#portfolio">Portfolio</a></li>
-            <li><a href="Contact">Contact</a></li>
+            </li> 
+            </NavLink>
+            <NavLink to="#portfolio" activeClassName="is-active"><li><a>Portfolio</a></li></NavLink>
+          <NavLink to="contact" activeClassName="is-active"> <li><a>Contact</a> </li></NavLink>
           </ul>
         </nav>
       </div>

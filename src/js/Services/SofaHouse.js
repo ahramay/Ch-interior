@@ -137,9 +137,11 @@ class SofaHouse extends Component{
       <div class="credits">
         Designed by <a href="">Smart IT Tech</a>
       </div>
+        <div class="pull-right-1">
+          <a href="#" classname="back-to-top"><i className="fa fa-chevron-up"></i></a>
+        </div>
     </div>
   </footer>
-  <a href="" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     </div> 
      
   );

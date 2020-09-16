@@ -21,6 +21,7 @@
 }
 
 
+
 @keyframes slider {
   0%    { left: 0px }
   29%   { left: 0px  }
@@ -39,8 +40,6 @@
   background-size: cover;
   padding: 60px 0 40px 0;
 }
-
-
 
 .about .container {
  position: relative;
@@ -534,7 +533,27 @@ margin-right: 10px;
   margin-top: 25px;
   margin-left: 30px;
 }
-
+.Footer-info .pull-right-1{
+  position: fixed;
+  background: #fff;
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  transition: background 0.5s;
+  bottom: 20px;
+}
+.Footer-info .pull-right-1:focus {
+  background: #50d8af;
+  color: #fff;
+  outline: none;
+}
+.Footer-info .pull-right-1:hover{
+	opacity:1;
+	background-color:#004a80;
+	color:#fff;	
+}
 /* mobile style
 --------------------------------*/
 
